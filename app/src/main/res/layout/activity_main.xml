@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgcontent"
+        android:foregroundGravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bglogo"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:fontFamily="@font/mmedium"
+                android:text="Username"
+                android:textColor="#000000"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:fontFamily="@font/mlight"
+                android:hint="Masukkan Username"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Nama"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:fontFamily="@font/mmedium"
+                android:text="Nama"
+                android:textColor="#000000"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:fontFamily="@font/mlight"
+                android:hint="Masukkan Nama"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Telpon"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:fontFamily="@font/mmedium"
+                android:text="Telpon"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etTelpon"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:fontFamily="@font/mlight"
+                android:hint="Masukkan No Telpon"
+                android:inputType="number"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/JenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pregular"
+                android:text="Jenis Kelamin"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:id="@+id/radioJK"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_pria"
+                    android:layout_width="183dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#2D4CE4"
+                    android:fontFamily="@font/plight"
+                    android:text="Pria"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorLink="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rd_wanita"
+                    android:layout_width="183dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#2D4CE4"
+                    android:buttonTint="#2D4CE4"
+                    android:fontFamily="@font/plight"
+                    android:text="Wanita"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Genre"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text="Genre Film Diminati"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#2D4CE4"
+                    android:text="Action"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/checkDrama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#2D4CE4"
+                    android:text="Drama"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/checkHoror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#2D4CE4"
+                    android:text="Horor"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text="Seberapa Sering Menonton film"
+                android:textColor="#000000" />
+
+            <SeekBar
+                android:id="@+id/seekbarFilm"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:backgroundTint="#FFFFFF"
+                android:max="3" />
+
+            <TextView
+                android:id="@+id/tvPresentase"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#2D4CE4"
+                android:text="Submit"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#E43F3F"
+                android:text="Reset"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btn_readData"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#00bdf2"
+                android:fontFamily="@font/pregular"
+                android:text="Lihat Data Member"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

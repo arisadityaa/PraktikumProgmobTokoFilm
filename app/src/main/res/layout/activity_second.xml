@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".secondActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:foregroundGravity="center"
+        android:background="@drawable/bgcontent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t_konfirm"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:fontFamily="@font/pregular"
+                android:gravity="center"
+                android:text="Data Pengguna Baru"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:fontFamily="@font/mmedium"
+                android:text="Username :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/t_username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/pregular"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:fontFamily="@font/mmedium"
+                android:text="Nama :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/t_nama"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/pregular"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:fontFamily="@font/mmedium"
+                android:text="Telpon :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/t_telpon"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/pregular"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:fontFamily="@font/mmedium"
+                android:text="Jenis Kelamin :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/t_jk"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/pregular"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:fontFamily="@font/mmedium"
+                android:text="Genre Film Disukai :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/t_genre"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/pregular"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:fontFamily="@font/mmedium"
+                android:text="Tingkatan Menonton Film :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/t_presentase"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/pregular"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

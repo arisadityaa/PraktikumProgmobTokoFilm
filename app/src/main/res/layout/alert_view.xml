@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="327dp"
+        android:layout_height="443dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t_alert"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:gravity="center"
+                android:text="Konfirmasi Data"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Username" />
+
+                <TextView
+                    android:id="@+id/tUsername"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Nama" />
+
+                <TextView
+                    android:id="@+id/tNama"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Telpon :" />
+
+                <TextView
+                    android:id="@+id/tTelpon"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Jenis Kelamin :" />
+
+                <TextView
+                    android:id="@+id/tJK"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Fenis Film Diminati :" />
+
+                <TextView
+                    android:id="@+id/tGenre"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Tingkatan Menonton Film :" />
+
+                <TextView
+                    android:id="@+id/tPresentase"
+                    android:layout_width="186dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FF9800"
+                    android:text="Cancel"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/btn_kirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#6AFF00"
+                    android:text="Kirim"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
