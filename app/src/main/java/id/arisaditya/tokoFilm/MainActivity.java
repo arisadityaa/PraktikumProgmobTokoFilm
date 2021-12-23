@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
         if (!action.isChecked() && !drama.isChecked() && !horor.isChecked()) {
-            Toast.makeText(MainActivity.this,"Harap pilih pekerjaan",Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this,"Harap pilih Genre",Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;
